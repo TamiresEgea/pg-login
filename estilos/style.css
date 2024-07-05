@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* Paleta de cores:
+#D95970 -- rosê
+#574F8C -- lilas
+#59CCD9 --azul céu
+#F2C063 -- areia
+#0D0D0D -- preto */
+
+*{
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #574F8C  ;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+section#login{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+
+    background-color: #574f8c44;
+    width: 270px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px black;
+
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease;
+    
+}
+
+
+section#login > div#imagem{
+    display: block;
+    background: #0D0D0D url(../imagens/img-login-removebg-preview.png) no-repeat ;
+    background-size: contain;
+    height: 270px;
+   
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+
+form > div.campo{
+    background-color: #574f8c44;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+form > a.botao{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    text-decoration: none;
+}
+
+
+#ilogin, #isenha{
+    height: 20px;
+    background-color: #574f8c44;
+    border: none;
+    text-align: center;
+}
+
+form > input[type=submit]{
+    display: block;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    background-color: #F2C063;
+    color:black ;
+    border: none;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover{
+    background-color: #59CCD9;
+    
+}
+
